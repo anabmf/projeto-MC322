@@ -29,13 +29,13 @@ public class Feitico extends Cartas {
         //Esse é ativado quando o alvo é um jogador
         //Pode ser tanto o jogador que conjurou o Feitiço como o oponente
         if (this.getHabilidade().equals("Cura")){
-            //Cura aumenta a vida do Jogador em 1.
-            int nova_vida = player.getVida() + 1;//variável auxiliar que soma 1 à vida atual
+            //Cura aumenta a vida do Jogador em 3.
+            int nova_vida = player.getVida() + 3;//variável auxiliar que soma 3 à vida atual
             player.setVida(nova_vida);
         }
         if (this.getHabilidade().equals("Dano")){
             //Dano diminui a vida do Jogador em 1.
-            int nova_vida = player.getVida() - 1;//variável auxiliar que subtrái 1 à vida atual
+            int nova_vida = player.getVida() - 3;//variável auxiliar que subtrái 3 à vida atual
             player.setVida(nova_vida);
         }
         if (this.getHabilidade().equals("Comprar")){
@@ -63,10 +63,6 @@ public class Feitico extends Cartas {
                     player.getMesa().remove(i);//remove ele do ArrayList Mesa do jogador
                 }
             }
-        }
-        if (this.getHabilidade().equals("Comprar")){
-            //compra uma carta do deck
-            player.comprarCarta();
         }
     }
 
