@@ -1,27 +1,47 @@
 import java.util.Scanner;
-//falta colocar arquivo, terminar a estrutura da mein, implementar a interface gráfica
+import java.util.ArrayList;
+// Falta colocar arquivo, terminar a estrutura da mein, implementar a interface gráfica
+
 public class Main {
     public static void main(String[] args) {
         //aparecer o menu com as opções de construir um deck, jogar e sair do jogo.
         String opcao;
         Scanner entrada = new Scanner(System.in);
         opcao = entrada.nextLine();
-        while (opcao.equals("Sair")==false){
+    
+        while (opcao.equals("Sair")==false) {
+
             if (opcao.equals("Deck")){
                 //construir o deck e salvar o deck no arquivo.
+                CriadorDecks a = new CriadorDecks();
+                a.InicializarCartas();
+                ArrayList<Cartas> listaTeste1 = a.getCartas();
+                for (Cartas carta: listaTeste1) {
+                    System.out.println(carta + "\n");
+                }
+                a.adicionarDecksIniciais();
+                ArrayList<Deck> listaTeste2 = a.getDecks();
+                for (Deck deck: listaTeste2) {
+                    System.out.println(deck + "\n" + deck.getCartas().toString() + "\n");
+                }
             }
-            //jogo
+
             if (opcao.equals("Jogo")){
                 //Essa sessão é puramente pra teste, vamos ter que refazer dps com os arquivos
+
                 //jogador 1 escolhendo o deck e poder
+                System.out.println("Nome do Player 1: ");
                 String nomePlayer1 = entrada.nextLine();
+
                 //escolher um deck do arquivo
+
                 //escolher um poder do arquivo
-                Lacaio lacaio = new Lacaio("Mane", 1, 1, 1);//intancia pra teste;
-                PoderCura poder1 = new PoderCura(nomePlayer1, 2);//Instancia de teste
+                Lacaio lacaio = new Lacaio("Mane", 1, 1, 1); // Instância de teste
+                PoderCura poder1 = new PoderCura(nomePlayer1, 2);// Instância de teste
                 Deck deck1 = new Deck("Abobora");//apenas para texte; eles devem ser retirados de um arquivo com os deck prontos
                 deck1.adicionarCarta(lacaio);
                 Jogador player1 = new Jogador(nomePlayer1, 20, 10, 0, deck1, poder1);
+
                 //jogador 2 escolhendo o deck e poder
                 String nomePlayer2 = entrada.nextLine();
                 //escolher um deck do arquivo
@@ -68,18 +88,20 @@ public class Main {
                     }
                     //repetir o bloco anterior para o jogador 2;
                 }
+
                 //avaliando quem venceu
-                if(player1.getVida() <= 0){
+                if (player1.getVida() <= 0) {
                     System.out.println("Player 2 venceu");
                 } else if (player2.getVida() <= 0) {
                     System.out.println("Player 1 venceu");
                 }
             }
-            if (opcao.equals("Fechar")){
+            if (opcao.equals("Fechar")) {
                 entrada.close();
                 //fechar o app
             }
             else {
+                opcao = "";
                 continue;
             }
         }

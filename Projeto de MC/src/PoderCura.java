@@ -9,7 +9,7 @@ public class PoderCura extends Poder{
     private int qtdCura;
 
     public PoderCura(String nome, int qtdCura){
-        //construtor
+    //construtor
         super(nome);
         this.qtdCura = qtdCura;
     }

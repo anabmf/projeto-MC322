@@ -10,9 +10,7 @@ public abstract class Cartas{
     protected int custoMana;
 
     public Cartas(String nome, int custoMana){
-        
         //Construtor da classe
-
         this.custoMana = custoMana;
         this.nome = nome;
     }

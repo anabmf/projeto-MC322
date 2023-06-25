@@ -2,14 +2,14 @@
  * Classe PoderCura filha de Poder
  * Construtor: PoderDano(String nome, int qtdCura)
  * Poder responsável por diminuir a vida atual do jogador
- */
+*/
 
 public class PoderDano extends Poder{
     
     private int qtdDano;
 
     public PoderDano(String nome, int qtdDano){
-        //construtor
+    //construtor
         super(nome);
         this.qtdDano = qtdDano;
     }

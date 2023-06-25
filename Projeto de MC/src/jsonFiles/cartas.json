@@ -1,0 +1,45 @@
+{
+    "cartas": [
+        {
+            "tipo": "Lacaio",
+            "nome": "Murloc Saqueador",
+            "custo": 1,
+            "poder": 2,
+            "vida": 1
+        },
+        {
+            "tipo": "Lacaio",
+            "nome": "Crocolisco do Rio",
+            "custo": 2,
+            "poder": 2,
+            "vida": 3
+        },
+        {
+            "tipo": "Lacaio",
+            "nome": "Furiante de Magma",
+            "custo": 3,
+            "poder": 5,
+            "vida": 1
+        },
+        {
+            "tipo": "Lacaio",
+            "nome": "Yeti Ventogelante",
+            "custo": 4,
+            "poder": 4,
+            "vida": 5
+        },
+        {
+            "tipo": "Lacaio",
+            "nome": "Ogro Punho de Pedra",
+            "custo": 6,
+            "poder": 6,
+            "vida": 7
+        },
+        {
+            "tipo": "Feitico",
+            "nome": "Assassinar",
+            "custo": 5,
+            "habilidade": "Destruir"
+        }
+    ]
+}
