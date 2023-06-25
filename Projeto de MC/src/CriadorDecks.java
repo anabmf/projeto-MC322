@@ -33,7 +33,7 @@ public class CriadorDecks {
         try {
             // Ler as cartas dentro de jsonFiles/cartas.json
             FileReader fileReader = new FileReader(
-                "CAMINHODOARQUIVO.json");
+                "Projeto de MC/src/jsonFiles/cartas.json");
             JsonElement jsonElement = JsonParser.parseReader(fileReader);
             fileReader.close();
     
@@ -84,7 +84,7 @@ public class CriadorDecks {
         try {
             // Ler os decks dentro de jsonFiles/decks.json
             FileReader fileReader = new FileReader(
-                "CAMINHODOARQUIVO.json");
+                "Projeto de MC/src/jsonFiles/decks.json");
             JsonElement jsonElement = JsonParser.parseReader(fileReader);
             fileReader.close();
     
