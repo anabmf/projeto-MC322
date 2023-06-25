@@ -1,3 +1,4 @@
+import java.io.*;
 import java.util.Scanner;
 //falta colocar arquivo, terminar a estrutura da mein, implementar a interface gráfica
 public class Main {
@@ -9,7 +10,16 @@ public class Main {
             System.out.println("\nOpcoes: \nJogo \nDeck \nSair");
             opcao = entrada.nextLine();
             if (opcao.equals("Deck")){
-                //construir o deck e salvar o deck no arquivo.
+                //tratando a exceção de quando não encontrarmos o deck
+                File arquivo = new File("caminho/do/arquivo.txt");//dps teremos que trocar esse campo pelo nome do arquivo em questão
+                try {
+                    Scanner scanner = new Scanner(arquivo);
+                    //processar os dados do arquivo.
+                    //Como nós vamos fazer com que o jogador escolha o deck? salvamos num Array ou escolhemos direto do arquivo?
+                    scanner.close();
+                } catch (FileNotFoundException e){
+                    System.out.println("Não foi possível abrir o arquivo");
+                }
             }
             //jogo
             if (opcao.equals("Jogo")){
