@@ -1,0 +1,28 @@
+{
+    "decks": [
+        {
+            "nome": "Deck Básico 1",
+            "cartas": [
+                "Crocolisco do Rio",
+                "Yeti Ventogelante",
+                "Assassinar"
+            ]
+        },
+        {
+            "nome": "Deck Básico 2",
+            "cartas": [
+                "Murloc Saqueador",
+                "Furiante de Magma",
+                "Assassinar"
+            ]
+        },
+        {
+            "nome": "Decfsjisfis 3",
+            "cartas": [
+                "Murloc Saqueador",
+                "Ogro do Punho de Pedra",
+                "Assassinar"
+            ]
+        }
+    ]
+}
