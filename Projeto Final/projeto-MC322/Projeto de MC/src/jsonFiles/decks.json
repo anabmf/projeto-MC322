@@ -1,27 +1,53 @@
 {
     "decks": [
         {
-            "nome": "Deck Básico 1",
+            "nome": "Necromancia",
             "cartas": [
+                "Assassinar",
+                "Prolemadre Aranasi",
+                "Fiola Ruinaluz",
+                "Ajudandte Descarnado",
+                "Agente Funerária Necrótica",
+                "Criomortisador",
+                "Geist Exuma-Ossos",
+                "Judity, diva do flagelo",
+                "Olivia, Noiva Carmesin",
+                "Rona, Arauto da Invasão",
+                "Hidetsugo, Devorador das chamas",
+                "Alesha, aquela que sorri para a morte",
+                "Jornada para a eternidade",
+                "Paixão pela caça",
+                "Sangue na Neve",
+                "Maestria dos mortos",
+                "Deixar as traças",
+                "Marcar para a morte",
+                "Destruir os fracos",
+                "Fazer o banquete"
+            ]
+        },
+        {
+            "nome": "Bestas Monstruosas",
+            "cartas": [
+                "Murloc Saqueador",
                 "Crocolisco do Rio",
                 "Yeti Ventogelante",
-                "Assassinar"
-            ]
-        },
-        {
-            "nome": "Deck Básico 2",
-            "cartas": [
-                "Murloc Saqueador",
-                "Furiante de Magma",
-                "Assassinar"
-            ]
-        },
-        {
-            "nome": "Decfsjisfis 3",
-            "cartas": [
-                "Murloc Saqueador",
-                "Ogro do Punho de Pedra",
-                "Assassinar"
+                "Ogro Punho de Pedra",
+                "Ursotron",
+                "Quebragelo Ymarjar",
+                "Valete de Espadas",
+                "Rainha de Copas",
+                "Rei de Paus",
+                "Kyodai, Alma de Kamigawa",
+                "Ertai, Fome Primal",
+                "Cavaleiro Dobra-Céu",
+                "Chance de Glória",
+                "Busca",
+                "Gigantizar",
+                "Paixão pela caça",
+                "Epifania de Alduin",
+                "Cascata de Sabedoria",
+                "Invocar as tropas",
+                "Epitome do poder"
             ]
         }
     ]
