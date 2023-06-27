@@ -4,6 +4,7 @@
             "tipo": "Lacaio",
             "nome": "Murloc Saqueador",
             "custo": 1,
+            "descricao": "",
             "poder": 2,
             "vida": 1
         },
@@ -11,6 +12,7 @@
             "tipo": "Lacaio",
             "nome": "Crocolisco do Rio",
             "custo": 2,
+            "descricao": "",
             "poder": 2,
             "vida": 3
         },
@@ -18,6 +20,7 @@
             "tipo": "Lacaio",
             "nome": "Furiante de Magma",
             "custo": 3,
+            "descricao": "",
             "poder": 5,
             "vida": 1
         },
@@ -25,6 +28,7 @@
             "tipo": "Lacaio",
             "nome": "Yeti Ventogelante",
             "custo": 4,
+            "descricao": "",
             "poder": 4,
             "vida": 5
         },
@@ -32,6 +36,7 @@
             "tipo": "Lacaio",
             "nome": "Ogro Punho de Pedra",
             "custo": 6,
+            "descricao": "",
             "poder": 6,
             "vida": 7
         },
@@ -39,7 +44,385 @@
             "tipo": "Feitico",
             "nome": "Assassinar",
             "custo": 5,
-            "habilidade": "Destruir"
+            "descricao": "Destrua o lacaio alvo"
+        },
+        {
+            "tipo": "Lacaio",
+            "nome": "Cadaver Nocivo",
+            "custo": 1,
+            "descricao": "Grito de guerra: cause 2 de dano a um inimigo e ao seu herói",
+            "poder": 1,
+            "vida": 2
+        },
+        {
+            "tipo": "Lacaio",
+            "nome": "Prolemadre Aranasi",
+            "custo": 6,
+            "descricao": "Provocar. Quando você comprar este card, restaure 4 de vida do seu herói",
+            "poder": 4,
+            "vida": 6
+        },
+        {
+            "tipo": "Lacaio",
+            "nome": "Ursotron",
+            "custo": 3,
+            "descricao": "Último Suspiro: Compre um mecanoide do seu deck",
+            "poder": 3,
+            "vida": 3
+        },
+        {
+            "tipo": "Lacaio",
+            "nome": "Gerente do Coliseu",
+            "custo": 3,
+            "descricao": "Inspirar: Devolva este lacaio à sua mão",
+            "poder": 2,
+            "vida": 5
+        },
+        {
+            "tipo": "Lacaio",
+            "nome": "Fiola Ruinaluz",
+            "custo": 3,
+            "descricao": "Sempre que você alvejar este lacaio com um feitiço, genhe Escudo Divino",
+            "poder": 3,
+            "vida": 4
+        },
+        {
+            "tipo": "Lacaio",
+            "nome": "Mestre de Cerimônias",
+            "custo": 3,
+            "descricao": "Grito de Guerra: Se você tiver um lacaio com Dano Mágico, ganhe +2/+2",
+            "poder": 4,
+            "vida": 2
+        },
+        {
+            "tipo": "Lacaio",
+            "nome": "Ajudandte Descarnado",
+            "custo": 1,
+            "descricao": "Grito de guerra: Conceda +2 de ataque a um Morto-Vivo aliado",
+            "poder": 1,
+            "vida": 2
+        },
+        {
+            "tipo": "Lacaio",
+            "nome": "Quebragelo Ymarjar",
+            "custo": 1,
+            "descricao": "Grito de guerra: Receba +1 de ataque para cada feitiço de Gelo na sua mão",
+            "poder": 1,
+            "vida": 2
+        },
+        {
+            "tipo": "Lacaio",
+            "nome": "Agente Funerária Necrótica",
+            "custo": 2,
+            "descricao": "Grito de guerra: Se um Morto-Vivo aliado morreu após seu turno anterior, descubra um card de Runa Profana",
+            "poder": 2,
+            "vida": 3
+        },
+        {
+            "tipo": "Lacaio",
+            "nome": "Arauta do Inverno",
+            "custo": 2,
+            "descricao": "Ultimo Suspiro: Compre um feitiço de Gelo",
+            "poder": 2,
+            "vida": 2
+        },
+        {
+            "tipo": "Lacaio",
+            "nome": "Criomortisador",
+            "custo": 2,
+            "descricao": "Depois que você lancar um feitiço, cause 1 de dano a dois inimigos aleatórios",
+            "poder": 2,
+            "vida": 3
+        },
+        {
+            "tipo": "Lacaio",
+            "nome": "Geist Exuma-Ossos",
+            "custo": 2,
+            "descricao": "Grito de Guerra: Gaste um Cadáver para receber +1/+2",
+            "poder": 2,
+            "vida": 2
+        },
+        {
+            "tipo": "Lacaio",
+            "nome": "Judity, diva do flagelo",
+            "custo": 3,
+            "descricao": "Lacaios aliados tem +1/+0. Quando um lacaio aliado morrer, cause 1 de dano a um lacaio alvo ou herói",
+            "poder": 2,
+            "vida": 2
+        },
+        {
+            "tipo": "Lacaio",
+            "nome": "Tameshi, arquiteto da realidade",
+            "custo": 3,
+            "descricao": "Quando uma carta for retorna para a mão de algum jogador, compre um card",
+            "poder": 2,
+            "vida": 3
+        },
+        {
+            "tipo": "Lacaio",
+            "nome": "Valete de Espadas",
+            "custo": 6,
+            "descricao": "No início do turno, caso você tenha na mesa os lacaios Valete de Espadas, Rainha de copas e Rei de Paus, cause 3 de dano a todos os lacaios inimigos",
+            "poder": 5,
+            "vida": 5
+        },
+        {
+            "tipo": "Lacaio",
+            "nome": "Rainha de Copas",
+            "custo": 8,
+            "descricao": "No início do turno, caso você tenha na mesa os lacaios Valete de Espadas, Rainha de copas e Rei de Paus, cause 3 de dano a todos os lacaios inimigos",
+            "poder": 4,
+            "vida": 8
+        },
+        {
+            "tipo": "Lacaio",
+            "nome": "Rei de Paus",
+            "custo": 10,
+            "descricao": "No início do turno, caso você tenha na mesa os lacaios Valete de Espadas, Rainha de copas e Rei de Paus, cause 3 de dano a todos os lacaios inimigos",
+            "poder": 10,
+            "vida": 10
+        },
+        {
+            "tipo": "Lacaio",
+            "nome": "Elite de Boros",
+            "custo": 1,
+            "descricao": "Ao atacar, ganhe +2/+2",
+            "poder": 1,
+            "vida": 1
+        },
+        {
+            "tipo": "Lacaio",
+            "nome": "Samuira de Eiganjo",
+            "custo": 1,
+            "descricao": "",
+            "poder": 1,
+            "vida": 1
+        },
+        {
+            "tipo": "Lacaio",
+            "nome": "Sabia Luminante",
+            "custo": 1,
+            "descricao": "Ao conjurar um fetiço, Sabia Luminante ganha +2/+2",
+            "poder": 0,
+            "vida": 1
+        },
+        {
+            "tipo": "Lacaio",
+            "nome": "Elspeth, Arcanjo Ascendido",
+            "custo": 5,
+            "descricao": "Anjos aliados possuem Vigilância e Vìnculo com a vida",
+            "poder": 4,
+            "vida": 4
+        },
+        {
+            "tipo": "Lacaio",
+            "nome": "Olivia, Noiva Carmesin",
+            "custo": 6,
+            "descricao": "Voar. Quando Olivía, Noiva Carmesin atacar, reviva um lacaio do seu cemitério. Ele é um vampiro além de seus outros arquétipos",
+            "poder": 3,
+            "vida": 4
+        },
+        {
+            "tipo": "Lacaio",
+            "nome": "Kyodai, Alma de Kamigawa",
+            "custo": 4,
+            "descricao": "Lampejo, Voar. Quando Kyodai for alvejado por um feitiço, ele sai de fase",
+            "poder": 3,
+            "vida": 3
+        },
+        {
+            "tipo": "Lacaio",
+            "nome": "Rona, Arauto da Invasão",
+            "custo": 2,
+            "descricao": "Ao conjurar um feitiço, compre uma carta",
+            "poder": 1,
+            "vida": 3
+        },
+        {
+            "tipo": "Lacaio",
+            "nome": "Hidetsugo, Devorador das chamas",
+            "custo": 4,
+            "descricao": "Ao entrar no campo de batalha, cause 2 de dano ao lacaio alvo",
+            "poder": 3,
+            "vida": 4
+        },
+        {
+            "tipo": "Lacaio",
+            "nome": "Paladino Carente",
+            "custo": 3,
+            "descricao": "Ao entrar no campo de batalha, escolha um lacaio aliado, enquanto ele estiver na mesa, Paladino Carente não perde Vida",
+            "poder": 0,
+            "vida": 3
+        },
+        {
+            "tipo": "Lacaio",
+            "nome": "Alesha, aquela que sorri para a morte",
+            "custo": 3,
+            "descricao": "Quando Alesha, aquela que sorri para a morte, deixar o campo de batalha, retorne-a para a mão",
+            "poder": 3,
+            "vida": 1
+        },
+        {
+            "tipo": "Lacaio",
+            "nome": "Ertai, Fome Primal",
+            "custo": 8,
+            "descricao": "",
+            "poder": 10,
+            "vida": 10
+        },
+        {
+            "tipo": "Lacaio",
+            "nome": "Cavaleiro Dobra-Céu",
+            "custo": 2,
+            "descricao": "Voar",
+            "poder": 1,
+            "vida": 2
+        },
+        {
+            "tipo": "Lacaio",
+            "nome": "Mestre da Lamina Imperial",
+            "custo": 3,
+            "descricao": "Primeiro Ataque ",
+            "poder": 2,
+            "vida": 1
+        },
+        {
+            "tipo": "Feitico",
+            "nome": "Chance de Glória",
+            "custo": 3,
+            "descricao": "Você tem mais um turno após esse. Ao final do próximo turno, perca o jogo"
+        },
+        {
+            "tipo": "Feitico",
+            "nome": "Busca",
+            "custo": 1,
+            "descricao": "Compre um card"
+        },
+        {
+            "tipo": "Feitico",
+            "nome": "Jornada para a eternidade",
+            "custo": 3,
+            "descricao": "Retorne para o campo de batalha um lacaio do cemitério"
+        },
+        {
+            "tipo": "Feitico",
+            "nome": "Gigantizar",
+            "custo": 4,
+            "descricao": "Lacaio alvo ganha +3/+3"
+        },
+        {
+            "tipo": "Feitico",
+            "nome": "Paixão pela caça",
+            "custo": 3,
+            "descricao": "Um lacaio aliado causa dano igual a seu poder a um alvo"
+        },
+        {
+            "tipo": "Feitico",
+            "nome": "Epifania de Alduin",
+            "custo": 7,
+            "descricao": "Jogue mais um turno depois desse"
+        },
+        {
+            "tipo": "Feitico",
+            "nome": "Sangue na Neve",
+            "custo": 6,
+            "descricao": "Destrua todos os lacaios"
+        },
+        {
+            "tipo": "Feitico",
+            "nome": "Cascata de Sabedoria",
+            "custo": 3,
+            "descricao": "Compre duas cartas"
+        },
+        {
+            "tipo": "Feitico",
+            "nome": "Invocação impontent",
+            "custo": 3,
+            "descricao": "Invoque um lacaio da sua mão ignorando o seu custo em Mana"
+        },
+        {
+            "tipo": "Feitico",
+            "nome": "Mandato Imperial",
+            "custo": 2,
+            "descricao": "Lacaios aliados ganham +1/+0 até o final do turno"
+        },
+        {
+            "tipo": "Feitico",
+            "nome": "Desaparecer",
+            "custo": 1,
+            "descricao": "Retore um lacaio para a mão de seu dono"
+        },
+        {
+            "tipo": "Feitico",
+            "nome": "Maestria dos mortos",
+            "custo": 4,
+            "descricao": "Retorne um lacaio do cemitério e ele ganha +1/+1"
+        },
+        {
+            "tipo": "Feitico",
+            "nome": "Invocar as tropas",
+            "custo": 3,
+            "descricao": "Invoque dois lacaios 1/1"
+        },
+        {
+            "tipo": "Feitico",
+            "nome": "Deixar as traças",
+            "custo": 5,
+            "descricao": "Quando um lacaio morrer, crie um lacaio Inseto 1/1"
+        },
+        {
+            "tipo": "Feitico",
+            "nome": "Erupção de fogo",
+            "custo": 4,
+            "descricao": "Cause 2 de dano a todos os lacaios"
+        },
+        {
+            "tipo": "Feitico",
+            "nome": "Extrair informações",
+            "custo": 2,
+            "descricao": "Escolha uma carta na mão do oponente para ele descartar, você perde 2 de vida"
+        },
+        {
+            "tipo": "Feitico",
+            "nome": "Epitome do poder",
+            "custo": 10,
+            "descricao": "Pelo resto da partida, ao ativar o seu Poder, ele é ativado 5 vezes"
+        },
+        {
+            "tipo": "Feitico",
+            "nome": "Ritos Santos",
+            "custo": 3,
+            "descricao": "Cure 5 de vida do seu Herói"
+        },
+        {
+            "tipo": "Feitico",
+            "nome": "Marcar para a morte",
+            "custo": 2,
+            "descricao": "Marque um lacaio, quando ele morrer, compre uma carta"
+        },
+        {
+            "tipo": "Feitico",
+            "nome": "Fazer o banquete",
+            "custo": 7,
+            "descricao": "No começo de cada turno, ganhe 1 de vida"
+        },
+        {
+            "tipo": "Feitico",
+            "nome": "Destruir os fracos",
+            "custo": 1,
+            "descricao": "Destrua o lacaio com o menor poder"
+        },
+        {
+            "tipo": "Feitico",
+            "nome": "Roubo de dados",
+            "custo": 3,
+            "descricao": "Compre uma carta do deck inimigo"
+        },
+        {
+            "tipo": "Feitico",
+            "nome": "Alcance os céus",
+            "custo": 2,
+            "descricao": "O lacaio alvo ganha voar"
         }
     ]
 }
