@@ -18,7 +18,7 @@ public class Feitico extends Carta {
     }
 
     public String toStringFull(){
-        return "Nome: " + nome + "<br>Custo de mana: " + custoMana + "<br>Descrição: " + descricao;
+        return "Nome: " + nome + "\nCusto de mana: " + custoMana + "\nDescrição: " + descricao;
     }
 
     public String toStringFullLabel(){
