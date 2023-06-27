@@ -18,8 +18,23 @@ public class Deck {
         this.cartas = new ArrayList<>();
     }
 
-        public String toString(){
-        return nome;
+    public String toString() {
+        String s = "";
+        s += "- Nome do Deck: " + nome + "\n\n";
+        for (Carta carta: cartas) {
+            s += carta.toStringFull() + "\n\n";
+        }
+        return s;
+    }
+
+    public String toStringLabel(){
+        String s = "<html>";
+        s += "- Nome do Deck: " + nome + "<br/><br/>";
+        for (Carta carta: cartas) {
+            s += carta.toStringFullLabel() + "<br/><br/>";
+        }
+        s += "<html>";
+        return s;
     }
 
     // Getters e setters

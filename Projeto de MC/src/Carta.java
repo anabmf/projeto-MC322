@@ -17,7 +17,13 @@ public abstract class Carta {
         this.descricao = descricao;
     }
 
-    public void ativarHabilidade() {} // Método abstrato
+    public String toStringFull() {
+        return "ERRO: CARTA SEM TIPO";
+    }
+
+    public String toStringFullLabel() {
+        return "ERRO: CARTA SEM TIPO";
+    }
 
     // Getters e setters
     public int getCustoMana() {

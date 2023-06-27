@@ -1,0 +1,29 @@
+{
+  "decks": [
+    {
+      "nome": "Teste",
+      "cartas": [
+        "Yeti Ventogelante",
+        "Valete de Espadas",
+        "Judity, diva do flagelo",
+        "Busca",
+        "Jornada para a eternidade",
+        "Ertai, Fome Primal",
+        "Destruir os fracos",
+        "Epitome do poder",
+        "Ritos Santos",
+        "Fazer o banquete",
+        "Marcar para a morte",
+        "Rainha de Copas",
+        "Elite de Boros",
+        "Samuira de Eiganjo",
+        "Rei de Paus",
+        "Kyodai, Alma de Kamigawa",
+        "Alesha, aquela que sorri para a morte",
+        "Paladino Carente",
+        "Rona, Arauto da Invasão",
+        "Olivia, Noiva Carmesin"
+      ]
+    }
+  ]
+}

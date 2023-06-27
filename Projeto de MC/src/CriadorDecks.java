@@ -24,9 +24,28 @@ public class CriadorDecks {
 
 
     public void printDecks() {
+        System.out.println("> Decks Pre-Made:" + "\n");
         for (Deck deck: decks) {
             System.out.println(deck);
         }
+        System.out.println("> Decks Usuário:" + "\n");
+        for (Deck deckUsuario: decksUsuario) {
+            System.out.println(deckUsuario);
+        }
+    }
+
+
+    public String stringDecks() {
+        String s = "";
+        s += "> Decks Pre-Made:" + "\n\n";
+        for (Deck deck: decks) {
+            s += deck + "\n";
+        }
+        s += "> Decks Usuário:" + "\n\n";
+        for (Deck deckUsuario: decksUsuario) {
+            s += deckUsuario + "\n";
+        }
+        return s;
     }
 
 

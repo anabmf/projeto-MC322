@@ -22,7 +22,12 @@ public class Lacaio extends Carta {
 
     public String toStringFull() {
         return "Nome: " + nome + "\nCusto de mana: " + custoMana + 
-        "\nPoder: " + poder + "/ Vida: " + vida + "\nDescrição: " + descricao;
+        "\nPoder: " + poder + " / Vida: " + vida + "\nDescrição: " + descricao;
+    }
+
+    public String toStringFullLabel() {
+        return "<html>Nome: " + nome + "<br>Custo de mana: " + custoMana + 
+        "<br>Poder: " + poder + " / Vida: " + vida + "<br>Descrição: " + descricao + "<html>";
     }
 
     // Getters e setters

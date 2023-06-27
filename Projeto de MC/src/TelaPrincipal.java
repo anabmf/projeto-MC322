@@ -8,18 +8,21 @@ public class TelaPrincipal extends Tela implements ActionListener {
     private ImageIcon fundo = new ImageIcon("Projeto de MC/src/imagens/HearthstonePlayerBackground.jpg");
     private ImageIcon imagemBotaoDeck = new ImageIcon("Projeto de MC/src/imagens/BotaoEscolher.png");
     private ImageIcon imagemBotaoFinalizarDeck = new ImageIcon("Projeto de MC/src/imagens/BotaoFinalizar.png");
+    private ImageIcon imagemBotaoVisualizarDecks = new ImageIcon("Projeto de MC/src/imagens/BotaoVisualizar.png");
     private JLayeredPane painelTela = new JLayeredPane();
     private JLabel labelBackground = new JLabel();
     private JLabel labelNomeDeck = new JLabel();
     private JTextField textNomeDeck = new JTextField(50);
     private JButton botaoDeck = new JButton(imagemBotaoDeck);
     private JButton botaoFinalizarDeck = new JButton(imagemBotaoFinalizarDeck);
+    private JButton botaoVisualizarColecaoDecks = new JButton(imagemBotaoVisualizarDecks);
     private int contador = 0;
 
     private CriadorDecks criadorDecks;
     private Carta cartaEmUso;
     private Deck deckEmEdicao;
     private DefaultListModel<String> cartaListModel;
+    private DefaultListModel<String> deckListModel;
 
     public TelaPrincipal(CriadorDecks criadorDecks) {
 
@@ -27,8 +30,9 @@ public class TelaPrincipal extends Tela implements ActionListener {
         super();
 
         this.criadorDecks = criadorDecks;
-        this.cartaListModel = new DefaultListModel<>();
         this.deckEmEdicao = new Deck("");
+        cartaListModel = new DefaultListModel<>();
+        deckListModel = new DefaultListModel<>();
 
         // Label fundo
         labelBackground.setIcon(fundo);
@@ -57,12 +61,18 @@ public class TelaPrincipal extends Tela implements ActionListener {
         botaoFinalizarDeck.setBounds(270, 275, 250, 40);
         botaoFinalizarDeck.addActionListener(this);
 
+        // Botao Visualizar Decks
+        botaoVisualizarColecaoDecks.setFocusable(false);
+        botaoVisualizarColecaoDecks.setBounds(270, 390, 250, 40);
+        botaoVisualizarColecaoDecks.addActionListener(this);
+
         // Organizando a Painel
         painelTela.setPreferredSize(new Dimension(800, 500));
         painelTela.add(labelNomeDeck, Integer.valueOf(1));
         painelTela.add(textNomeDeck, Integer.valueOf(2));
         painelTela.add(botaoDeck, Integer.valueOf(2));
         painelTela.add(botaoFinalizarDeck, Integer.valueOf(2));
+        painelTela.add(botaoVisualizarColecaoDecks, Integer.valueOf(2));
 
         this.add(painelTela);
         pack();
@@ -147,6 +157,37 @@ public class TelaPrincipal extends Tela implements ActionListener {
 
                 System.out.println("Deck exportado!");
             }
+        }
+
+        if (e.getSource() == botaoVisualizarColecaoDecks) {
+
+            criadorDecks.printDecks();
+
+            JFrame colecaoDecks = new JFrame("Coleção de Decks:");
+            colecaoDecks.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+            colecaoDecks.setSize(800, 500);
+            colecaoDecks.setLocationRelativeTo(null);
+
+            deckListModel.clear();
+
+            for (Deck deck: criadorDecks.getDecks()) {
+                deckListModel.addElement(deck.toStringLabel());
+            }
+            for (Deck deckUsuario: criadorDecks.getDecksUsuario()) {
+                deckListModel.addElement(deckUsuario.toStringLabel());
+            }
+
+            JList<String> decksDaColecao = new JList<>(deckListModel);
+
+            JScrollPane scrollPane = new JScrollPane(decksDaColecao);
+            scrollPane.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_ALWAYS);
+            scrollPane.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
+            scrollPane.setPreferredSize(new Dimension(800, 500));
+
+            colecaoDecks.add(scrollPane);
+
+            colecaoDecks.pack();
+            colecaoDecks.setVisible(true);
         }
     }
 
