@@ -20,7 +20,7 @@ public class Deck {
 
     public String toString() {
         String s = "";
-        s += "- Nome do Deck: " + nome + "\n\n- Cartas:\n\n";
+        s += "- Nome do Deck: " + nome + "\n\nCartas:\n\n";
         for (Carta carta: cartas) {
             s += carta.toStringFull() + "\n\n";
         }
