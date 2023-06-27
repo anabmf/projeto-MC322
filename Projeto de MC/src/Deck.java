@@ -20,7 +20,7 @@ public class Deck {
 
     public String toString() {
         String s = "";
-        s += "- Nome do Deck: " + nome + "\n\n";
+        s += "- Nome do Deck: " + nome + "\n\n- Cartas:\n\n";
         for (Carta carta: cartas) {
             s += carta.toStringFull() + "\n\n";
         }
@@ -29,9 +29,14 @@ public class Deck {
 
     public String toStringLabel(){
         String s = "<html>";
-        s += "- Nome do Deck: " + nome + "<br/><br/>";
+        s += "-----------------------------------------------------" + 
+            "-----------------------------------------------------<br>" +
+            "- Nome do Deck: " + nome + "<br>" +
+            "-----------------------------------------------------" +
+            "-----------------------------------------------------<br>" +
+            "<br>Cartas:<br><br>";
         for (Carta carta: cartas) {
-            s += carta.toStringFullLabel() + "<br/><br/>";
+            s += carta.toStringFullLabel() + "<br><br>";
         }
         s += "<html>";
         return s;
