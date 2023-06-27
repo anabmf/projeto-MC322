@@ -158,7 +158,7 @@ public class TelaInicial extends Tela implements ActionListener{
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == getBotaoIniciar()) {
             System.out.println("Jogar");
-            new TelaJogador(criadorDecks);
+            new TelaPrincipal(criadorDecks);
             this.dispose();
         } else if (e.getSource() == getBotaoSair()) {
             System.out.println("Sair");

@@ -3,7 +3,7 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class TelaJogador extends Tela implements ActionListener {
+public class TelaPrincipal extends Tela implements ActionListener {
 
     private ImageIcon fundo = new ImageIcon("Projeto de MC/src/imagens/HearthstonePlayerBackground.jpg");
     private ImageIcon imagemBotaoDeck = new ImageIcon("Projeto de MC/src/imagens/BotaoEscolher.png");
@@ -15,15 +15,13 @@ public class TelaJogador extends Tela implements ActionListener {
     private JButton botaoDeck = new JButton(imagemBotaoDeck);
     private JButton botaoFinalizarDeck = new JButton(imagemBotaoFinalizarDeck);
     private int contador = 0;
-    public String nomeJogador1;
-    public String nomeJogador2;
 
     private CriadorDecks criadorDecks;
     private Carta cartaEmUso;
     private Deck deckEmEdicao;
     private DefaultListModel<String> cartaListModel;
 
-    public TelaJogador(CriadorDecks criadorDecks) {
+    public TelaPrincipal(CriadorDecks criadorDecks) {
 
         // Organizando a tela
         super();

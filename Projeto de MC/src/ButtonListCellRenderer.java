@@ -1,3 +1,8 @@
+/*
+ * Classe ButtonListCellRenderer
+ * Usada para tornar as oções da lista de cartas selecionáveis
+*/
+
 import javax.swing.*;
 import java.awt.*;
 import java.util.Set;
