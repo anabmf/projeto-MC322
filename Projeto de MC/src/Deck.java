@@ -12,6 +12,7 @@ public class Deck {
     private String nome;
     private ArrayList<Carta> cartas;
 
+    // Construtor
     public Deck(String nome){
         this.nome = nome;
         this.cartas = new ArrayList<>();

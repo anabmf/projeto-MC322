@@ -6,14 +6,14 @@ import java.awt.event.ActionListener;
 public class TelaInicial extends Tela implements ActionListener{
     private ImageIcon logo = new ImageIcon("Projeto de MC/src/imagens/HearthstoneLogo.png");
     private ImageIcon fundo = new ImageIcon("Projeto de MC/src/imagens/HearthstoneFrontPage.png");
-    private ImageIcon jogarSolto = new ImageIcon("Projeto de MC/src/imagens/BotaoJogar.png");
-    private ImageIcon jogarPressed = new ImageIcon("Projeto de MC/src/imagens/BotaoJogarPressed.png");
+    private ImageIcon iniciarSolto = new ImageIcon("Projeto de MC/src/imagens/BotaoIniciar.png");
+    private ImageIcon iniciarPressed = new ImageIcon("Projeto de MC/src/imagens/BotaoIniciarPressed.png");
     private ImageIcon sairSolto = new ImageIcon("Projeto de MC/src/imagens/BotaoSair.png");
     private ImageIcon sairPressed = new ImageIcon("Projeto de MC/src/imagens/BotaoSairPressed.png");
     private JLayeredPane paneTela = new JLayeredPane();
     private JLabel labelBack = new JLabel();
     private JLabel labelBotoes = new JLabel();
-    private JButton botaoJogar = new JButton(jogarSolto);
+    private JButton botaoIniciar = new JButton(iniciarSolto);
     private JButton botaoSair = new JButton(sairSolto);
 
     private CriadorDecks criadorDecks;
@@ -36,13 +36,13 @@ public class TelaInicial extends Tela implements ActionListener{
         paneTela.add(labelBotoes, Integer.valueOf(1));
 
         // Botao Jogar
-        botaoJogar.setPressedIcon(jogarPressed);
-        botaoJogar.setBorder(BorderFactory.createEmptyBorder());
-        botaoJogar.setFocusable(false);
-        botaoJogar.setBounds(200, 380, jogarSolto.getIconWidth(), jogarPressed.getIconHeight());
-        labelBotoes.add(botaoJogar);
-        paneTela.add(botaoJogar, Integer.valueOf(2));
-        botaoJogar.addActionListener(this);
+        botaoIniciar.setPressedIcon(iniciarPressed);
+        botaoIniciar.setBorder(BorderFactory.createEmptyBorder());
+        botaoIniciar.setFocusable(false);
+        botaoIniciar.setBounds(200, 380, iniciarSolto.getIconWidth(), iniciarPressed.getIconHeight());
+        labelBotoes.add(botaoIniciar);
+        paneTela.add(botaoIniciar, Integer.valueOf(2));
+        botaoIniciar.addActionListener(this);
         
         //Botao Sair
         botaoSair.setPressedIcon(sairPressed);
@@ -57,7 +57,7 @@ public class TelaInicial extends Tela implements ActionListener{
         pack();
     }
 
-
+    // Getters e setters
     public ImageIcon getLogo() {
         return this.logo;
     }
@@ -74,20 +74,20 @@ public class TelaInicial extends Tela implements ActionListener{
         this.fundo = fundo;
     }
 
-    public ImageIcon getJogarSolto() {
-        return this.jogarSolto;
+    public ImageIcon getiniciarSolto() {
+        return this.iniciarSolto;
     }
 
-    public void setJogarSolto(ImageIcon jogarSolto) {
-        this.jogarSolto = jogarSolto;
+    public void setiniciarSolto(ImageIcon iniciarSolto) {
+        this.iniciarSolto = iniciarSolto;
     }
 
-    public ImageIcon getJogarPressed() {
-        return this.jogarPressed;
+    public ImageIcon getiniciarPressed() {
+        return this.iniciarPressed;
     }
 
-    public void setJogarPressed(ImageIcon jogarPressed) {
-        this.jogarPressed = jogarPressed;
+    public void setiniciarPressed(ImageIcon iniciarPressed) {
+        this.iniciarPressed = iniciarPressed;
     }
 
     public ImageIcon getSairSolto() {
@@ -130,12 +130,12 @@ public class TelaInicial extends Tela implements ActionListener{
         this.labelBotoes = labelBotoes;
     }
 
-    public JButton getBotaoJogar() {
-        return this.botaoJogar;
+    public JButton getBotaoIniciar() {
+        return this.botaoIniciar;
     }
 
-    public void setBotaoJogar(JButton botaoJogar) {
-        this.botaoJogar = botaoJogar;
+    public void setBotaoIniciar(JButton botaoIniciar) {
+        this.botaoIniciar = botaoIniciar;
     }
 
     public JButton getBotaoSair() {
@@ -156,7 +156,7 @@ public class TelaInicial extends Tela implements ActionListener{
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        if (e.getSource() == getBotaoJogar()) {
+        if (e.getSource() == getBotaoIniciar()) {
             System.out.println("Jogar");
             new TelaJogador(criadorDecks);
             this.dispose();

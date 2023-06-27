@@ -15,10 +15,18 @@ public class CriadorDecks {
     private ArrayList<Deck> decks;
     private ArrayList<Deck> decksUsuario;
 
+    // Construtor
     public CriadorDecks() {
         this.cartas = new ArrayList<Carta>();
         this.decks = new ArrayList<Deck>();
         this.decksUsuario = new ArrayList<Deck>();
+    }
+
+
+    public void printDecks() {
+        for (Deck deck: decks) {
+            System.out.println(deck);
+        }
     }
 
 

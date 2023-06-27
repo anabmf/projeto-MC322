@@ -1,6 +1,6 @@
 /*
  * Classe Lacios filha de Cartas
- * Construtor: Lacaio(String nome, int custoMana, int poder, int vida)
+ * Construtor: Lacaio(String nome, int custoMana, String descricao, int poder, int vida)
  * possui os métodos gets e sets
 */
 
@@ -9,8 +9,8 @@ public class Lacaio extends Carta {
     private int poder;
     private int vida;
 
+    // Construtor
     public Lacaio(String nome, int custoMana, String descricao, int poder, int vida) {
-        // Construor da classe.
         super(nome, custoMana, descricao);
         this.poder = poder;
         this.vida = vida;

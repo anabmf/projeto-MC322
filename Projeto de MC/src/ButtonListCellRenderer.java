@@ -1,10 +1,15 @@
 import javax.swing.*;
 import java.awt.*;
+import java.util.Set;
+import java.util.HashSet;
 
 public class ButtonListCellRenderer extends JButton implements ListCellRenderer<String> {
 
+    private Set<Integer> selectedIndexes;
+
     public ButtonListCellRenderer () {
         setOpaque(true);
+        selectedIndexes = new HashSet<>();
     }
 
     @Override
@@ -16,9 +21,14 @@ public class ButtonListCellRenderer extends JButton implements ListCellRenderer<
         setForeground(isSelected ? list.getSelectionForeground() : list.getForeground());
         setBorder(BorderFactory.createEmptyBorder(5, 10, 5, 10));
 
-        if (isSelected) {
-            this.setBackground(Color.YELLOW);
+        if (isSelected && selectedIndexes.size() < 20) {
+            selectedIndexes.add(index);
         }
+
+        if (selectedIndexes.contains(index)) {
+            this.setBackground(Color.LIGHT_GRAY);
+        }
+
         return this;
     }
 }

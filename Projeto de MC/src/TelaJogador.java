@@ -51,12 +51,12 @@ public class TelaJogador extends Tela implements ActionListener {
 
         // Botao Deck
         botaoDeck.setFocusable(false);
-        botaoDeck.setBounds(270, 250, 250, 40);
+        botaoDeck.setBounds(270, 200, 250, 40);
         botaoDeck.addActionListener(this);
 
-        // Botao Deck
+        // Botao Finalizar Deck
         botaoFinalizarDeck.setFocusable(false);
-        botaoFinalizarDeck.setBounds(270, 300, 250, 40);
+        botaoFinalizarDeck.setBounds(270, 275, 250, 40);
         botaoFinalizarDeck.addActionListener(this);
 
         // Organizando a Painel
@@ -152,7 +152,7 @@ public class TelaJogador extends Tela implements ActionListener {
         }
     }
 
-
+    // Getters e setters
     public ImageIcon getFundo() {
         return this.fundo;
     }

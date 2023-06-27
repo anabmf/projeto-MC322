@@ -1,7 +1,7 @@
 /*
- * Classe abstrata: Carta
- * Construtor: Cartas(String nome, int custoMano)
- * Possui gets e sets, além do método ativarHabilidade() que será implementado nas classes fihas
+ * Classe abstrata Carta
+ * Construtor: Cartas(String nome, int custoMano, String descricao)
+ * Possui gets e sets
 */
 
 public abstract class Carta {
@@ -10,8 +10,8 @@ public abstract class Carta {
     protected int custoMana;
     protected String descricao;
 
+    // Construtor
     public Carta(String nome, int custoMana, String descricao) {
-        // Construtor da classe
         this.custoMana = custoMana;
         this.nome = nome;
         this.descricao = descricao;

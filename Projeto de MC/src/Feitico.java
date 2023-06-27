@@ -1,17 +1,15 @@
 /*
  *Classe Feitiço filha de Cartas 
- *Construtor: Feitico(String nome, int custoMana, String habilidade)
- *Possui gets e sets, além de um método sobrecarregado ativarHabilidade() 
+ *Construtor: Feitico(String nome, int custoMana, String descricao)
+ *Possui gets e sets
 */
 
 public class Feitico extends Carta {
     
     private String habilidade;
 
-    public Feitico(String nome, int custoMana, String descricao){
-        
-        //Construtor da classe Feitiço
-        
+    // Construtor
+    public Feitico(String nome, int custoMana, String descricao) {
         super(nome, custoMana, descricao);
     }
 
